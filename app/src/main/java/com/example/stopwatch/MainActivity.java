@@ -2,6 +2,7 @@ package com.example.stopwatch;
 
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
+import android.os.SystemClock;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         set.start();
     }
 
+    /**Starts or stops Stopwatch*/
     public void startStopwatch(View view){
         if (isTimerRunning == false) {
             Chronometer chronometer = findViewById(R.id.myChronometer);
@@ -44,7 +46,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**Resets Stopwatch*/
     public void restartStopwatch(View view){
         Chronometer chronometer = findViewById(R.id.myChronometer);
+        //Resets the timer to 0
+        chronometer.setBase(SystemClock.elapsedRealtime());
+        chronometer.stop();
+        isTimerRunning = false;
     }
 }
