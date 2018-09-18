@@ -1,36 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <Chronometer
+        android:id="@+id/myChronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="100sp"
+        android:paddingBottom="32dp"
+        android:layout_centerInParent="true"
+        />
 
-        <Chronometer
-            android:id="@+id/myChronometer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="100dp"
-            android:layout_centerHorizontal="true"
-            />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myChronometer"
+        android:layout_centerHorizontal="true"
+        >
 
         <Button
             android:id="@+id/startStopwatch"
             android:layout_width="250dp"
             android:layout_height="80dp"
-            android:text="Start Stopwatch"
-            android:textSize="20dp"
+            android:text="@string/start_stopwatch"
+            android:textSize="20sp"
             android:onClick="startStopwatch"
-            android:layout_below="@id/myChronometer"
-            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/my_button"
             android:textColor="@android:color/white"
             android:background="@drawable/rounded_corners"
+            android:layout_gravity="center_horizontal"
             />
 
-    </RelativeLayout>
+        <ImageView
+            android:id="@+id/refreshButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/refresh"
+            android:onClick="restartStopwatch"
+            android:layout_gravity="center_horizontal"
 
-</android.support.constraint.ConstraintLayout>
+            />
+    </LinearLayout>
+
+</RelativeLayout>
