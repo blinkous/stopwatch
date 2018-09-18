@@ -41,11 +41,10 @@
             android:id="@+id/refreshButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:paddingTop="16dp"
             android:src="@drawable/refresh"
             android:onClick="restartStopwatch"
-            android:layout_gravity="center_horizontal"
-
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
             />
     </LinearLayout>
 

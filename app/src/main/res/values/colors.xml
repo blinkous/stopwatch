@@ -14,6 +14,12 @@
 
     <color name="pastelPurple">#e9bfff</color>
     <color name="pastelBlue">#bfc9ff</color>
+    <color name="pastelGreen">#d2ffbf</color>
+    <color name="pastelOrange">#ffd8bf</color>
+    <color name="pastelYellow">#fff8bf</color>
+    <color name="pastelRed">#ffc1bf</color>
+    <color name="pastelPink">#ffbffa</color>
+    <color name="pastelTeal">#bffbff</color>
 
     <color name="burgundy">#630035</color>
     <color name="blue">#009dff</color>

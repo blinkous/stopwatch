@@ -10,7 +10,7 @@
         android:valueFrom="@color/pastelPurple"
         android:valueTo="@color/pastelBlue"
         android:repeatCount="-1"
-        android:duration="5000"
         android:repeatMode="reverse"
+        android:duration="@integer/back_animator_duration"
         />
 </set>

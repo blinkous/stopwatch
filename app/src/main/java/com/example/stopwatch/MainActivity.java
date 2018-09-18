@@ -1,6 +1,8 @@
 package com.example.stopwatch;
 
+import android.animation.Animator;
 import android.animation.AnimatorInflater;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.os.SystemClock;
 import android.support.constraint.ConstraintLayout;
@@ -23,8 +25,29 @@ public class MainActivity extends AppCompatActivity {
         /**Animates the background colors of the main screen background_animation in res/animator**/
         RelativeLayout myCon = findViewById(R.id.mainlayout);
         AnimatorSet set = (AnimatorSet) AnimatorInflater.loadAnimator(this,
-                R.animator.background_animation);
+                R.animator.background_animation2);
         set.setTarget(myCon);
+
+        /**Restarting the animation when it's finished, code from
+         * https://stackoverflow.com/questions/17622333/repeat-animatorset */
+        set.addListener(new AnimatorListenerAdapter() {
+            private boolean mCanceled;
+            @Override
+            public void onAnimationStart(Animator animation) {
+                mCanceled = false;
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+                mCanceled = true;
+            }
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                if (!mCanceled) {
+                    animation.start();
+                }
+            }
+        });
         set.start();
     }
 
