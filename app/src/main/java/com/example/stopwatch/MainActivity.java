@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         isTimerRunning = false;
     }
 
+    /**Trying to implement a change colors feature*/
 
 //    public void changeColorLight (View view) {
 //        /**Animates the background colors of the main screen background_animation in res/animator**/
