@@ -5,14 +5,12 @@ import android.animation.AnimatorInflater;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.os.SystemClock;
-import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private boolean isTimerRunning = false;
@@ -25,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         /**Animates the background colors of the main screen background_animation in res/animator**/
         RelativeLayout myCon = findViewById(R.id.mainlayout);
         AnimatorSet set = (AnimatorSet) AnimatorInflater.loadAnimator(this,
-                R.animator.background_animation2_bright);
+                R.animator.background_animation_prb);
         set.setTarget(myCon);
 
         /**Restarting the animation when it's finished, code from

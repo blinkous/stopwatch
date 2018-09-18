@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+android:interpolator="@android:anim/accelerate_interpolator"
+android:shareInterpolator="false"
+android:ordering="sequentially">
+<!--Can create multiple objectAnimators
+A repeat count of -1 repeats the animation forever-->
+<objectAnimator
+    android:propertyName="backgroundColor"
+    android:valueFrom="@color/darkRed"
+    android:valueTo="@color/darkOrange"
+    android:duration="@integer/back_animator_duration"
+    />
+<objectAnimator
+    android:propertyName="backgroundColor"
+    android:valueFrom="@color/darkOrange"
+    android:valueTo="@color/darkYellow"
+    android:duration="@integer/back_animator_duration"
+    />
+<objectAnimator
+    android:propertyName="backgroundColor"
+    android:valueFrom="@color/darkYellow"
+    android:valueTo="@color/darkGreen"
+    android:duration="@integer/back_animator_duration"
+    />
+<objectAnimator
+    android:propertyName="backgroundColor"
+    android:valueFrom="@color/darkGreen"
+    android:valueTo="@color/darkTeal"
+    android:duration="@integer/back_animator_duration"
+    />
+<objectAnimator
+    android:propertyName="backgroundColor"
+    android:valueFrom="@color/darkTeal"
+    android:valueTo="@color/darkBlue"
+    android:duration="@integer/back_animator_duration"
+    />
+<objectAnimator
+    android:propertyName="backgroundColor"
+    android:valueFrom="@color/darkBlue"
+    android:valueTo="@color/darkPurple"
+    android:duration="@integer/back_animator_duration"
+    />
+<objectAnimator
+    android:propertyName="backgroundColor"
+    android:valueFrom="@color/darkPurple"
+    android:valueTo="@color/darkPink"
+    android:duration="@integer/back_animator_duration"
+    />
+<objectAnimator
+    android:propertyName="backgroundColor"
+    android:valueFrom="@color/darkPink"
+    android:valueTo="@color/darkRed"
+    android:duration="@integer/back_animator_duration"
+    />
+</set>

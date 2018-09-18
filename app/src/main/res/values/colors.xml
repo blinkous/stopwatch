@@ -5,37 +5,52 @@
     <color name="colorAccent">@color/purple</color>
     <color name="colorPrimaryLight">#b4b4b4</color>
 
-    <color name="purple">#a100ff</color>
-    <color name="darkPurple">#480071</color>
-    <color name="darkGreen">#006008</color>
-    <color name="midnightBlue">#001063</color>
-    <color name="darkBlue">#0039ab</color>
-    <color name="gray">#707070</color>
+    <!--Dark-->
+    <color name="darkRed">#3b0000</color>
+    <color name="darkOrange">#412300</color>
+    <color name="darkYellow">#494100</color>
+    <color name="darkGreen">#113100</color>
+    <color name="darkTeal">#003126</color>
+    <color name="darkBlue">#000d4e</color>
+    <color name="darkViolet">#2e004b</color>
+    <color name="darkPurple">#27003e</color>
+    <color name="darkPink">#2d0021</color>
 
-    <color name="pastelPurple">#e9bfff</color>
-    <color name="pastelBlue">#bfc9ff</color>
-    <color name="pastelGreen">#d2ffbf</color>
+    <!--Pastels-->
+    <color name="pastelRed">#ffc1bf</color>
     <color name="pastelOrange">#ffd8bf</color>
     <color name="pastelYellow">#fff8bf</color>
-    <color name="pastelRed">#ffc1bf</color>
-    <color name="pastelPink">#ffbffa</color>
+    <color name="pastelGreen">#d2ffbf</color>
     <color name="pastelTeal">#bffbff</color>
+    <color name="pastelBlue">#bfc9ff</color>
+    <color name="pastelPurple">#e9bfff</color>
+    <color name="pastelPink">#ffbffa</color>
 
-    <color name="burgundy">#630035</color>
-    <color name="blue">#009dff</color>
-    <color name="teal">#00b389</color>
-    <color name="violet">#b042f4</color>
-    <color name="green">#3daf00</color>
-    <color name="orange">#ff8800</color>
+    <!--Brights-->
     <color name="red">#ff0000</color>
+    <color name="orange">#ff8800</color>
     <color name="yellow">#ffe100</color>
+    <color name="green">#3daf00</color>
+    <color name="teal">#00b389</color>
+    <color name="blue">#009dff</color>
+    <color name="violet">#b042f4</color>
+    <color name="purple">#a100ff</color>
     <color name="pink">#ff00bf</color>
 
+    <!--Grayscale and transparents-->
     <color name="white">#fff</color>
+    <color name="gray">#707070</color>
+    <color name="black">#000</color>
     <color name="whiteLightTransparent">#43ffffff</color>
     <color name="whiteDarkTransparent">#66ffffff</color>
     <color name="colorDarkTransparent">#32000000</color>
     <color name="colorLightTransparent">#8bffffff</color>
     <color name="transparent">#00ffffff</color>
+
+    <!--other-->
+    <color name="olive">#436000</color>
+    <color name="mediumBlue">#0039ab</color>
+    <color name="darkerPurple">#480071</color>
+    <color name="wine">#630035</color>
 
 </resources>
