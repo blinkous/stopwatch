@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         /**Animates the background colors of the main screen background_animation in res/animator**/
         RelativeLayout myCon = findViewById(R.id.mainlayout);
         AnimatorSet set = (AnimatorSet) AnimatorInflater.loadAnimator(this,
-                R.animator.background_animation2);
+                R.animator.background_animation2_bright);
         set.setTarget(myCon);
 
         /**Restarting the animation when it's finished, code from

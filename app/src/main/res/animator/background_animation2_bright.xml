@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator"
+    android:shareInterpolator="false"
+    android:ordering="sequentially">
+    <!--Can create multiple objectAnimators
+    A repeat count of -1 repeats the animation forever-->
+    <objectAnimator
+        android:propertyName="backgroundColor"
+        android:valueFrom="@color/red"
+        android:valueTo="@color/orange"
+        android:duration="@integer/back_animator_duration"
+        />
+    <objectAnimator
+        android:propertyName="backgroundColor"
+        android:valueFrom="@color/orange"
+        android:valueTo="@color/yellow"
+        android:duration="@integer/back_animator_duration"
+        />
+    <objectAnimator
+        android:propertyName="backgroundColor"
+        android:valueFrom="@color/yellow"
+        android:valueTo="@color/green"
+        android:duration="@integer/back_animator_duration"
+        />
+    <objectAnimator
+        android:propertyName="backgroundColor"
+        android:valueFrom="@color/green"
+        android:valueTo="@color/teal"
+        android:duration="@integer/back_animator_duration"
+        />
+    <objectAnimator
+        android:propertyName="backgroundColor"
+        android:valueFrom="@color/teal"
+        android:valueTo="@color/blue"
+        android:duration="@integer/back_animator_duration"
+        />
+    <objectAnimator
+        android:propertyName="backgroundColor"
+        android:valueFrom="@color/blue"
+        android:valueTo="@color/purple"
+        android:duration="@integer/back_animator_duration"
+        />
+    <objectAnimator
+        android:propertyName="backgroundColor"
+        android:valueFrom="@color/purple"
+        android:valueTo="@color/pink"
+        android:duration="@integer/back_animator_duration"
+        />
+    <objectAnimator
+        android:propertyName="backgroundColor"
+        android:valueFrom="@color/pink"
+        android:valueTo="@color/red"
+        android:duration="@integer/back_animator_duration"
+        />
+</set>
