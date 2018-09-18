@@ -14,15 +14,21 @@
             android:id="@+id/myChronometer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"/>
+            android:textSize="100dp"
+            android:layout_centerHorizontal="true"
+            />
 
         <Button
             android:id="@+id/startStopwatch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
             android:text="Start Stopwatch"
+            android:textSize="20dp"
             android:onClick="startStopwatch"
             android:layout_below="@id/myChronometer"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_corners"
             />
 
     </RelativeLayout>

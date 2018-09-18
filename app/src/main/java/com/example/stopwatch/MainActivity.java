@@ -8,9 +8,6 @@ import android.widget.Chronometer;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-//    private Chronometer chronometer = findViewById(R.id.myChronometer);
-//    private Button startButton = findViewById(R.id.startStopwatch);
     private boolean isTimerRunning = false;
 
     @Override
@@ -20,11 +17,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startStopwatch(View view){
-        Chronometer chronometer = findViewById(R.id.myChronometer);
-        chronometer.start();
-        isTimerRunning = true;
-
-        Button startButton = findViewById(R.id.startStopwatch);
-        startButton.setText("Stop Stopwatch");
+        if (isTimerRunning == false) {
+            Chronometer chronometer = findViewById(R.id.myChronometer);
+            chronometer.start();
+            Button startButton = findViewById(R.id.startStopwatch);
+            startButton.setText("Stop Stopwatch");
+            isTimerRunning = true;
+        }
+        else{
+            Chronometer chronometer = findViewById(R.id.myChronometer);
+            chronometer.stop();
+            Button startButton = findViewById(R.id.startStopwatch);
+            startButton.setText("Start Stopwatch");
+            isTimerRunning = false;
+        }
     }
 }
