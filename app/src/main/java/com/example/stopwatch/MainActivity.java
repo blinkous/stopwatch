@@ -21,15 +21,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        changeColorLight(findViewById(R.id.settingsButtonLight));
         /**Animates the background colors of the main screen background_animation in res/animator**/
         RelativeLayout myCon = findViewById(R.id.mainlayout);
-        AnimatorSet set = (AnimatorSet) AnimatorInflater.loadAnimator(this,
-                R.animator.background_animation_prb);
-        set.setTarget(myCon);
+        AnimatorSet mset = (AnimatorSet) AnimatorInflater.loadAnimator(this,
+                R.animator.background_animation2);
+        mset.setTarget(myCon);
 
         /**Restarting the animation when it's finished, code from
          * https://stackoverflow.com/questions/17622333/repeat-animatorset */
-        set.addListener(new AnimatorListenerAdapter() {
+        mset.addListener(new AnimatorListenerAdapter() {
             private boolean mCanceled;
             @Override
             public void onAnimationStart(Animator animation) {
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        set.start();
+        mset.start();
     }
 
     /**Starts or stops Stopwatch*/
@@ -77,8 +78,97 @@ public class MainActivity extends AppCompatActivity {
         isTimerRunning = false;
     }
 
-    public void changeSettings(View view){
-        Intent intent = new Intent(this, SettingsActivity.class);
-        startActivity(intent);
-    }
+
+//    public void changeColorLight (View view) {
+//        /**Animates the background colors of the main screen background_animation in res/animator**/
+//        RelativeLayout myCon = findViewById(R.id.mainlayout);
+//        AnimatorSet set = (AnimatorSet) AnimatorInflater.loadAnimator(this,
+//                R.animator.background_animation2);
+//        set.setTarget(myCon);
+//
+//        /**Restarting the animation when it's finished*/
+//        set.addListener(new AnimatorListenerAdapter() {
+//            private boolean mCanceled;
+//
+//            @Override
+//            public void onAnimationStart(Animator animation) {
+//                mCanceled = false;
+//            }
+//
+//            @Override
+//            public void onAnimationCancel(Animator animation) {
+//                mCanceled = true;
+//            }
+//
+//            @Override
+//            public void onAnimationEnd(Animator animation) {
+//                if (!mCanceled) {
+//                    animation.start();
+//                }
+//            }
+//        });
+//        set.start();
+//    }
+//
+//    public void changeColorBright (View view) {
+//        /**Animates the background colors of the main screen background_animation in res/animator**/
+//        RelativeLayout myCon = findViewById(R.id.mainlayout);
+//        AnimatorSet set = (AnimatorSet) AnimatorInflater.loadAnimator(this,
+//                R.animator.background_animation2_bright);
+//        set.setTarget(myCon);
+//
+//        /**Restarting the animation when it's finished*/
+//        set.addListener(new AnimatorListenerAdapter() {
+//            private boolean mCanceled;
+//
+//            @Override
+//            public void onAnimationStart(Animator animation) {
+//                mCanceled = false;
+//            }
+//
+//            @Override
+//            public void onAnimationCancel(Animator animation) {
+//                mCanceled = true;
+//            }
+//
+//            @Override
+//            public void onAnimationEnd(Animator animation) {
+//                if (!mCanceled) {
+//                    animation.start();
+//                }
+//            }
+//        });
+//        set.start();
+//    }
+//
+//    public void changeColorDark (View view) {
+//        /**Animates the background colors of the main screen background_animation in res/animator**/
+//        RelativeLayout myCon = findViewById(R.id.mainlayout);
+//        AnimatorSet set = (AnimatorSet) AnimatorInflater.loadAnimator(this,
+//                R.animator.background_animation2_dark);
+//        set.setTarget(myCon);
+//
+//        /**Restarting the animation when it's finished*/
+//        set.addListener(new AnimatorListenerAdapter() {
+//            private boolean mCanceled;
+//
+//            @Override
+//            public void onAnimationStart(Animator animation) {
+//                mCanceled = false;
+//            }
+//
+//            @Override
+//            public void onAnimationCancel(Animator animation) {
+//                mCanceled = true;
+//            }
+//
+//            @Override
+//            public void onAnimationEnd(Animator animation) {
+//                if (!mCanceled) {
+//                    animation.start();
+//                }
+//            }
+//        });
+//        set.start();
+//    }
 }
