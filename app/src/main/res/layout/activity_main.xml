@@ -49,15 +49,15 @@
     </LinearLayout>
 
     <!--Trying to implement a change colors feature-->
-    <!--<ImageView-->
-        <!--android:id="@+id/settingsButtonLight"-->
-        <!--android:layout_width="30dp"-->
-        <!--android:layout_height="30dp"-->
-        <!--android:src="@drawable/ring_light"-->
-        <!--android:onClick="changeColorLight"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_margin="8dp"-->
-        <!--/>-->
+    <ImageView
+        android:id="@+id/settingsButtonLight"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ring_light"
+        android:onClick="changeColorBright"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        />
     <!--<ImageView-->
         <!--android:id="@+id/settingsButtonDark"-->
         <!--android:layout_width="30dp"-->
