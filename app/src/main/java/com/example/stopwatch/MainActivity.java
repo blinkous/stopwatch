@@ -111,14 +111,14 @@ public class MainActivity extends AppCompatActivity {
 //        set.start();
 //    }
 //
-    public void changeColorBright (View view) {
-        /**Animates the background colors of the main screen background_animation in res/animator**/
+    /*public void changeColorBright (View view) {
+        *//**Animates the background colors of the main screen background_animation in res/animator**//*
         RelativeLayout myCon = findViewById(R.id.mainlayout);
         AnimatorSet set = (AnimatorSet) AnimatorInflater.loadAnimator(this,
                 R.animator.background_animation2_bright);
         set.setTarget(myCon);
 
-        /**Restarting the animation when it's finished*/
+        *//**Restarting the animation when it's finished*//*
         set.addListener(new AnimatorListenerAdapter() {
             private boolean mCanceled;
 
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         set.start();
-    }
+    }*/
 //
 //    public void changeColorDark (View view) {
 //        /**Animates the background colors of the main screen background_animation in res/animator**/
